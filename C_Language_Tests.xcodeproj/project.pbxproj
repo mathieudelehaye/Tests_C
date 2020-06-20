@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9137813F24956F7F007DE968 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9137813E24956F7F007DE968 /* main.cpp */; };
+		91764DC4249DCB91001103B8 /* hello.c in Sources */ = {isa = PBXBuildFile; fileRef = 91764DC1249DCB90001103B8 /* hello.c */; };
+		91764DC5249DCB91001103B8 /* utf8_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 91764DC2249DCB91001103B8 /* utf8_encoder.c */; };
+		91764DCF249DD2F9001103B8 /* unit_test.c in Sources */ = {isa = PBXBuildFile; fileRef = 91764DC8249DCCAA001103B8 /* unit_test.c */; };
+		91764DD5249DD893001103B8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 91764DD4249DD893001103B8 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9137813B24956F7F007DE968 /* CppTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9137813E24956F7F007DE968 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9137813B24956F7F007DE968 /* C_Language_Tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C_Language_Tests; sourceTree = BUILT_PRODUCTS_DIR; };
+		91764DC1249DCB90001103B8 /* hello.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hello.c; sourceTree = "<group>"; };
+		91764DC2249DCB91001103B8 /* utf8_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf8_encoder.c; sourceTree = "<group>"; };
+		91764DC7249DCCAA001103B8 /* unit_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unit_test.h; sourceTree = "<group>"; };
+		91764DC8249DCCAA001103B8 /* unit_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = unit_test.c; sourceTree = "<group>"; };
+		91764DCD249DCE9E001103B8 /* hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello.h; sourceTree = "<group>"; };
+		91764DCE249DCF62001103B8 /* utf8_encoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utf8_encoder.h; sourceTree = "<group>"; };
+		91764DD3249DD893001103B8 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		91764DD4249DD893001103B8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +59,7 @@
 		9137813C24956F7F007DE968 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9137813B24956F7F007DE968 /* CppTest */,
+				9137813B24956F7F007DE968 /* C_Language_Tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,17 +67,40 @@
 		9137813D24956F7F007DE968 /* CppTest */ = {
 			isa = PBXGroup;
 			children = (
-				9137813E24956F7F007DE968 /* main.cpp */,
+				91764DCA249DCCB4001103B8 /* h files */,
+				91764DCB249DCCD2001103B8 /* c files */,
 			);
 			path = CppTest;
+			sourceTree = "<group>";
+		};
+		91764DCA249DCCB4001103B8 /* h files */ = {
+			isa = PBXGroup;
+			children = (
+				91764DD3249DD893001103B8 /* main.h */,
+				91764DC7249DCCAA001103B8 /* unit_test.h */,
+				91764DCD249DCE9E001103B8 /* hello.h */,
+				91764DCE249DCF62001103B8 /* utf8_encoder.h */,
+			);
+			path = "h files";
+			sourceTree = "<group>";
+		};
+		91764DCB249DCCD2001103B8 /* c files */ = {
+			isa = PBXGroup;
+			children = (
+				91764DD4249DD893001103B8 /* main.c */,
+				91764DC8249DCCAA001103B8 /* unit_test.c */,
+				91764DC1249DCB90001103B8 /* hello.c */,
+				91764DC2249DCB91001103B8 /* utf8_encoder.c */,
+			);
+			path = "c files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9137813A24956F7F007DE968 /* CppTest */ = {
+		9137813A24956F7F007DE968 /* C_Language_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9137814224956F7F007DE968 /* Build configuration list for PBXNativeTarget "CppTest" */;
+			buildConfigurationList = 9137814224956F7F007DE968 /* Build configuration list for PBXNativeTarget "C_Language_Tests" */;
 			buildPhases = (
 				9137813724956F7F007DE968 /* Sources */,
 				9137813824956F7F007DE968 /* Frameworks */,
@@ -77,9 +110,9 @@
 			);
 			dependencies = (
 			);
-			name = CppTest;
+			name = C_Language_Tests;
 			productName = CppTest;
-			productReference = 9137813B24956F7F007DE968 /* CppTest */;
+			productReference = 9137813B24956F7F007DE968 /* C_Language_Tests */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +129,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9137813624956F7F007DE968 /* Build configuration list for PBXProject "CppTest" */;
+			buildConfigurationList = 9137813624956F7F007DE968 /* Build configuration list for PBXProject "C_Language_Tests" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9137813A24956F7F007DE968 /* CppTest */,
+				9137813A24956F7F007DE968 /* C_Language_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9137813F24956F7F007DE968 /* main.cpp in Sources */,
+				91764DC4249DCB91001103B8 /* hello.c in Sources */,
+				91764DC5249DCB91001103B8 /* utf8_encoder.c in Sources */,
+				91764DD5249DD893001103B8 /* main.c in Sources */,
+				91764DCF249DD2F9001103B8 /* unit_test.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +294,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9137813624956F7F007DE968 /* Build configuration list for PBXProject "CppTest" */ = {
+		9137813624956F7F007DE968 /* Build configuration list for PBXProject "C_Language_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9137814024956F7F007DE968 /* Debug */,
@@ -267,7 +303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9137814224956F7F007DE968 /* Build configuration list for PBXNativeTarget "CppTest" */ = {
+		9137814224956F7F007DE968 /* Build configuration list for PBXNativeTarget "C_Language_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9137814324956F7F007DE968 /* Debug */,
